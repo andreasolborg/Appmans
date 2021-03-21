@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #f9aa33;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GradesController">
+   <children>
+      <Button fx:id="addGrades" layoutX="50.0" layoutY="381.0" mnemonicParsing="false" onAction="#addGrades" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #344955;" text="Legg til karakterer" textAlignment="CENTER" textFill="#f9aa33">
+         <font>
+            <Font name="Calibri Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="50.0" layoutY="37.0" mnemonicParsing="false" onAction="#openHomeWindow" prefHeight="6.0" prefWidth="94.0" style="-fx-background-color: #344955;" text="Tilbake" textAlignment="CENTER" textFill="#f9aa33">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextArea layoutX="50.0" layoutY="461.0" prefHeight="59.0" prefWidth="400.0" style="-fx-background-color: #344955;" />
+      <TextField fx:id="courseName1" layoutX="57.0" layoutY="95.0" promptText="Navn på fag" />
+      <ComboBox fx:id="course7" layoutX="56.0" layoutY="321.0" prefWidth="150.0" />
+      <ComboBox fx:id="course8" layoutX="295.0" layoutY="321.0" prefWidth="150.0" />
+      <ComboBox fx:id="course5" layoutX="56.0" layoutY="258.0" prefWidth="150.0" />
+      <ComboBox fx:id="course6" layoutX="295.0" layoutY="258.0" prefWidth="150.0" />
+      <ComboBox fx:id="course3" layoutX="56.0" layoutY="194.0" prefWidth="150.0" />
+      <ComboBox fx:id="course4" layoutX="295.0" layoutY="194.0" prefWidth="150.0" />
+      <ComboBox fx:id="course1" layoutX="56.0" layoutY="126.0" prefWidth="150.0" />
+      <ComboBox fx:id="course2" layoutX="295.0" layoutY="126.0" prefWidth="150.0" />
+      <TextField fx:id="courseName3" layoutX="57.0" layoutY="159.0" promptText="Navn på fag" />
+      <TextField fx:id="courseName2" layoutX="296.0" layoutY="95.0" promptText="Navn på fag" />
+      <TextField fx:id="courseName4" layoutX="296.0" layoutY="161.0" promptText="Navn på fag" />
+      <TextField fx:id="courseName5" layoutX="57.0" layoutY="226.0" promptText="Navn på fag" />
+      <TextField fx:id="courseName6" layoutX="296.0" layoutY="226.0" promptText="Navn på fag" />
+      <TextField fx:id="courseName8" layoutX="296.0" layoutY="288.0" promptText="Navn på fag" />
+      <TextField fx:id="courseName7" layoutX="57.0" layoutY="288.0" promptText="Navn på fag" />
+   </children>
+</AnchorPane>

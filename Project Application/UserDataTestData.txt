@@ -1,0 +1,11 @@
+java.io.PrintWriter@f87fdf7
+Du er logget inn som: A, med fødselsår: 1994
+Du er logget inn som: A1, med fødselsår: 1920
+Du er logget inn som: A2, med fødselsår: 1120
+Du er logget inn som: A3, med fødselsår: 16370
+Du er logget inn som: b5, med fødselsår: 19753
+Du er logget inn som: C2, med fødselsår: 1994
+Du er logget inn som: C8, med fødselsår: 1920
+Du er logget inn som: C32, med fødselsår: 1120
+Du er logget inn som: CET, med fødselsår: 16370
+Du er logget inn som: Andreas, med fødselsår: 19753

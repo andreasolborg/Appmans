@@ -1,0 +1,6 @@
+Fredrik Tveisme;{Test1=A, TEST2=B}
+Andreas;{tetsts=C, setsetsts=D}
+JG;{IT3=D}
+JG;{ASDA=F}
+JG;{ASDA=F}
+Ludee;{werwerwerwer=E}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #f9aa33;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Button layoutX="50.0" layoutY="325.0" mnemonicParsing="false" onAction="#openGradesWindow" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #344955;" text="Karakterkalkulator" textAlignment="CENTER" textFill="#f9aa33">
+         <font>
+            <Font name="Calibri Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="51.0" layoutY="399.0" mnemonicParsing="false" onAction="#openAvgWindow" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #344955;" text="Karaktersnitt" textAlignment="CENTER" textFill="#f9aa33">
+         <font>
+            <Font name="Calibri Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="50.0" layoutY="476.0" mnemonicParsing="false" onAction="#openSettings" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #344955;" text="Innstillinger (admin)" textAlignment="CENTER" textFill="#f9aa33">
+         <font>
+            <Font name="Calibri Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="loginButton" layoutX="50.0" layoutY="223.0" mnemonicParsing="false" onAction="#verifyLoginCredentials" prefHeight="37.0" prefWidth="184.0" style="-fx-background-color: #344955;" text="Logg inn" textAlignment="CENTER" textFill="#f9aa33">
+         <font>
+            <Font name="Calibri Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="registerButton" layoutX="266.0" layoutY="223.0" mnemonicParsing="false" onAction="#registerUser" prefHeight="37.0" prefWidth="184.0" style="-fx-background-color: #344955;" text="Registrer bruker" textAlignment="CENTER" textFill="#f9aa33">
+         <font>
+            <Font name="Calibri Bold" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="usernameInput" layoutX="263.0" layoutY="125.0" prefHeight="25.0" prefWidth="184.0" />
+      <Text fill="#344955" layoutX="55.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fullt navn" wrappingWidth="120.251953125">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#344955" layoutX="53.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fødselsår (YYYY-MM-DD)">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="yearInput" layoutX="263.0" layoutY="173.0" prefHeight="25.0" prefWidth="184.0" text="1990" />
+      <Text fill="#344955" layoutX="128.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOVEDSIDE">
+         <font>
+            <Font name="Calibri Bold" size="50.0" />
+         </font>
+      </Text>
+      <Text fx:id="loggedInText" fill="#344955" layoutX="103.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Du er ikke logget inn" textAlignment="CENTER" wrappingWidth="296.0">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

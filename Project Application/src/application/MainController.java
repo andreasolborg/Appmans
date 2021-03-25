@@ -25,7 +25,7 @@ import javafx.stage.Stage;
 
 public class MainController implements Initializable{
 	
-	public boolean isLoggedIn;
+	public static boolean isLoggedIn;
 	public static String loggedInUser;
 	
 	@FXML
@@ -98,9 +98,19 @@ public class MainController implements Initializable{
 	}	
 	
 	
-	public void registerUser(ActionEvent event) throws FileNotFoundException {
+	public void registerUser(ActionEvent event) throws IOException {
 		int year = Integer.parseInt(yearInput.getText());
 		String username = usernameInput.getText();
+		BufferedReader br = new BufferedReader(new FileReader("UserData.txt"));
+		for (String line = br.readLine(); line != null; line = br.readLine()) {
+			line = line.split(";")[0];
+//			System.out.println(line);   //prints all users
+			if(line.equals(username)){
+				loggedInText.setText("User already exists");
+				throw new IllegalArgumentException("User already exists");
+//				break;
+			}
+		}
 		UserProfile.registerUser(username, year);
 		loggedInText.setText("Velkommen " + username);
 		isLoggedIn = true;

@@ -30,11 +30,21 @@ public class UserProfile {
 		
 	}
 	
-	public static void addGrades(String courseName, String grade) {   //prøve å legge til karakterer i et eget hashmap tilegnet brukeren som er innlogget
+	public static HashMap<String, String> addGrades(String courseName, String grade) {   //endret fra void tiil hashmap<str,str>
+		HashMap<String, String> userGrades = new HashMap<>();
 		if(!courseName.isEmpty() && !grade.isEmpty()) {
 			Course course = new Course(courseName, grade);						//lager et course med input som brukeren sender inn
 			userGrades.put(course.getCourseName(), course.getGrade());	    	//legger det til i hashmappet.
-			
+		}
+		System.out.println(userGrades.toString());
+		return userGrades;
+		
+	}
+	
+	public static void addGradesInApp(String courseName, String grade) {   //endret fra void tiil hashmap<str,str>
+		if(!courseName.isEmpty() && !grade.isEmpty()) {
+			Course course = new Course(courseName, grade);						//lager et course med input som brukeren sender inn
+			userGrades.put(course.getCourseName(), course.getGrade());	    	//legger det til i hashmappet.
 		}
 		return;
 		
@@ -87,6 +97,11 @@ public class UserProfile {
 		userProfile.addGrades("Matte 1", "a");
 		userProfile.addGrades("Diskmat", "b");
 		userProfile.addGrades("Introfaget", "v");
+		UserProfile userProfile1 = new UserProfile("2222222222", 1999);
+		userProfile1.addGrades("Ma23523tte 1", "a");
+		userProfile1.addGrades("Disk2235mat", "b");
+		userProfile1.addGrades("Introfaget", "v");
+		System.out.println(userGrades);
 		System.out.println(userGrades);
 		System.out.println(userProfile.getUsernameInput());
 		

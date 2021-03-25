@@ -43,4 +43,12 @@ public class Tester {
 	}
     
     
+    
+    
+    for line in userGrades.txt{
+    	split string at ";"
+    	outerMap1.put(gradeSplitter[0], gradeSplitter[1])
+    	print(outerMap1)
+    }
+    
 }

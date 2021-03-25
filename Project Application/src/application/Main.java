@@ -32,8 +32,13 @@ public class Main extends Application {
 		}
 	}
 	
+	
+	
 	public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException {
 		launch(args);
+		SaveHandler.loadToOuterMap("UserGrades");
+		System.out.println(UserProfile.outerMap.toString());
+		
 //		ObjectInputStream in = new ObjectInputStream(new FileInputStream("UserData.txt"));
 //		in.readObject();
 //		System.out.println(in);

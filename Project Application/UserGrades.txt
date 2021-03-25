@@ -1,6 +1,7 @@
-Fredrik Tveisme;{Test1=A, TEST2=B}
-Andreas;{tetsts=C, setsetsts=D}
-JG;{IT3=D}
-JG;{ASDA=F}
-JG;{ASDA=F}
-Ludee;{werwerwerwer=E}
+Seb;=null, Faget seb ikke har=D
+Thea Tangen;Fag1=B, Fag3=B, Fag2=B, Fag4=B
+Ludde;Fag1=C, Fag3=C, Fag2=C, Fag4=C
+Test Person1;Fag1=E, Fag3=E, Fag2=E, Fag4=E
+Andreas Olborg;=null, test3=D, etst3=D, Ja det gjør det=D, Funker det nå=A
+Test Person2;Fag1=E, Fag3=B, Fag2=A, Fag4=C
+Håkon Lund;Fag1=D, Fag3=D, Fag2=D, Fag4=D
